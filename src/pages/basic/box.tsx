@@ -1,9 +1,9 @@
 import { useFrame } from '@react-three/fiber';
 import React, { useRef, useState } from 'react'
 
-function Box(props) {
+function Box(props: any) {
     // This reference gives us direct access to the THREE.Mesh object
-    const ref = useRef();
+    const ref = useRef<any>();
     // Hold state for hovered and clicked events
     const [hovered, setHovered] = useState<boolean>(false);
     const [clicked, setClicked] = useState<boolean>(false);
